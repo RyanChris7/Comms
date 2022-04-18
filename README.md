@@ -1,5 +1,5 @@
 # Comms
-Comms an app module we will create using MERN Stack (MongoDB ExpressJS ReactJS and NodeJS.
+Comms an app module we will create using MERN Stack (MongoDB ExpressJS ReactJS and NodeJS.)
 
 To run the application:
 1. Open terminal
