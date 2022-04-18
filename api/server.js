@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://comms-app.netlify.app',
+  origin: ['https://comms-app.netlify.app','http;//localhost:3000'],
   credentials: true,
 }));
 
