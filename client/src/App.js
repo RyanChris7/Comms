@@ -18,7 +18,7 @@ function App() {
 
   }, []);
   function logout() {
-    axios.post('https://commsapp.herokuapp.com/logout', {}, {withCredentials:true})
+    axios.post('http://localhost:4000/logout', {}, {withCredentials:true})
       .then(() => setUser({}));
   }
 

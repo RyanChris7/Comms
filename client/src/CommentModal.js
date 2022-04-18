@@ -14,7 +14,7 @@ function CommentModal(props) {
   const visibleClass = props.open ? 'block' : 'hidden';
 
   useEffect(() => {
-    axios.get('https://commsapp.herokuapp.com/comments/'+props.id)
+    axios.get('http://localhost:4000/comments/'+props.id)
       .then(response => {
         setComment(response.data);
       });
