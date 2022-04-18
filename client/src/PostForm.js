@@ -1,4 +1,5 @@
 import Avatar from "./avatar.png";
+import People from "./people.png"
 import {useContext} from "react";
 import PostFormModalContext from "./PostFormModalContext";
 
@@ -9,7 +10,7 @@ function PostForm() {
 
       <div className="border border-reddit_border p-2 rounded-md flex bg-reddit_dark-brighter">
         <div className="rounded-full bg-gray-600 overflow-hidden w-10 h-10">
-          <img src={Avatar} alt="" style={{filter:'invert(100%)'}} />
+          <img src={People} alt="" style={{filter:'invert(100%)'}} />
         </div>
         <form action="" className="flex-grow bg-reddit_dark-brightest border border-reddit_border ml-4 mr-2 rounded-md">
           <input type="text"
