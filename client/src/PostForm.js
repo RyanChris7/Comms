@@ -1,4 +1,3 @@
-import Avatar from "./avatar.png";
 import People from "./people.png"
 import {useContext} from "react";
 import PostFormModalContext from "./PostFormModalContext";

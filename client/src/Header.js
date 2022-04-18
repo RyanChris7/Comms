@@ -1,13 +1,8 @@
-import Logo from "./logo.png";
 import Comms from "./Comms.png";
 import {
-  BellIcon,
-  ChatIcon,
   ChevronDownIcon,
   LoginIcon,
   LogoutIcon,
-  PlusIcon,
-  SearchIcon,
   UserIcon
 } from "@heroicons/react/outline";
 import Avatar from "./avatar.png";
