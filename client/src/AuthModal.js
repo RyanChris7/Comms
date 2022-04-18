@@ -23,7 +23,7 @@ function AuthModal() {
   function register(e) {
     e.preventDefault();
     const data = {email,username,password};
-    axios.post('http://localhost:4000/register', data, {withCredentials:true})
+    axios.post('https://commsapp.herokuapp.com/register', data, {withCredentials:true})
       .then(() => {
         user.setUser({username});
         modalContext.setShow(false);
@@ -35,7 +35,7 @@ function AuthModal() {
 
   function login() {
     const data = {username,password};
-    axios.post('http://localhost:4000/login', data, {withCredentials:true})
+    axios.post('https://commsapp.herokuapp.com/login', data, {withCredentials:true})
 	  .then(() => {
 	    modalContext.setShow(false);
 	    user.setUser({username})
@@ -80,7 +80,7 @@ function AuthModal() {
 
           {modalType === 'login' && (
             <div>
-              New to Comms? <button className="text-blue-600" onClick={() => modalContext.setShow('register')}>SIGN UP</button>
+              New to Reddit? <button className="text-blue-600" onClick={() => modalContext.setShow('register')}>SIGN UP</button>
             </div>
           )}
           {modalType === 'register' && (

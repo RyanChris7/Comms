@@ -13,12 +13,12 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('http://localhost:4000/user', {withCredentials:true})
+    axios.get('https://commsapp.herokuapp.com/user', {withCredentials:true})
       .then(response => setUser(response.data));
 
   }, []);
   function logout() {
-    axios.post('http://localhost:4000/logout', {}, {withCredentials:true})
+    axios.post('https://commsapp.herokuapp.com/logout', {}, {withCredentials:true})
       .then(() => setUser({}));
   }
 
