@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('https://commsapp.herokuapp.com/user', {withCredentials:true})
+    axios.get('https://localhost:4000/user', {withCredentials:true})
       .then(response => setUser(response.data));
 
   }, []);
